@@ -1,0 +1,43 @@
+.img-wrapper {
+    width: 15rem;
+    height: 30vh;
+    position: absolute;
+    background: silver;
+    overflow: hidden;
+    top: 20vh;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+}
+
+::selection {
+    background-color: transparent;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.prime {
+    width: 500px;
+    height: 35rem;
+    top: 5rem;
+    left: calc(50% - 250px);
+    z-index: 100000000;
+    box-shadow: 0 0 5px 0px black;
+    transition: all 0.4s ease-in-out;
+}
+
+.prev, .next, .prime {
+    display: flex
+}
+.prev, .next {
+    cursor: pointer;
+    top: calc(5rem + 8.9rem);
+}
+.prev {
+    left: 0
+}
+
+.next {
+    left: calc(100% - 15rem)
+}

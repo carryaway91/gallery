@@ -1,0 +1,7 @@
+<div class="img-wrapper" [ngClass]="[displayed ? 'prime' : '', prev ? 'prev' : '', next ? 'next' : '']"
+    (click)="setAsPrime()"
+    #img
+    [ngStyle]="prev ? {zIndex: displayedNum - index} : null"
+    >
+    <img [src]="image.path" alt="image" />
+</div>
